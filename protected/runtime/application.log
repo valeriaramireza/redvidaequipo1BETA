@@ -1,0 +1,47 @@
+2014/09/23 04:06:35 [error] [exception.CrugeException.500] Por favor cambie las referencias a 'UserIdentity' por 'CrugeUser'<br/>500
+REQUEST_URI=/SistemaRedVida/index.php?r=site/login
+HTTP_REFERER=http://localhost/SistemaRedVida/index.php?r=site/login
+---
+2014/09/23 04:13:34 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\SistemaRedVida\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\SistemaRedVida\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\SistemaRedVida\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/23 04:13:34 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>Usuario y/o contraseña incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\SistemaRedVida\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\SistemaRedVida\index.php (13)
+2014/09/23 04:17:35 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\SistemaRedVida\protected\extensions\bootstrap\widgets\TbNav.php(65): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): TbNav->init()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#3 C:\xampp\htdocs\SistemaRedVida\protected\views\layouts\main.php(55): SiteController->widget()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\SistemaRedVida\protected\views\layouts\column1.php(6): SiteController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\SistemaRedVida\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\SistemaRedVida\index.php(13): CWebApplication->run()
+REQUEST_URI=/SistemaRedVida/index.php
+in C:\xampp\htdocs\SistemaRedVida\protected\extensions\bootstrap\widgets\TbNav.php (65)
+in C:\xampp\htdocs\SistemaRedVida\protected\views\layouts\main.php (55)
+in C:\xampp\htdocs\SistemaRedVida\protected\views\layouts\column1.php (6)
