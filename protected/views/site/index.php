@@ -14,3 +14,4 @@ $this->pageTitle=Yii::app()->name;
 <p> Cambio directo en </p>
 <p> prueba agregar directo</p>
 <p> y que pazaaa, no pasa ná </p>
+<h1>ANDATE A LA CHUCHA PABLO</h1>
