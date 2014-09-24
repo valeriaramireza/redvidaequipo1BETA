@@ -15,3 +15,4 @@ $this->pageTitle=Yii::app()->name;
 <p> prueba agregar directo</p>
 <p> y que pazaaa, no pasa ná </p>
 <h1>ANDATE A LA CHUCHA PABLO</h1>
+<h1>Si ves esto valeria es porque te funciono!</h1>
