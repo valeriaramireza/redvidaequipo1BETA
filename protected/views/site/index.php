@@ -13,3 +13,4 @@ $this->pageTitle=Yii::app()->name;
 <p> Hernan Agrego esto</p>
 <p> Cambio directo en </p>
 <p> prueba agregar directo</p>
+<p> y que pazaaa </p>
