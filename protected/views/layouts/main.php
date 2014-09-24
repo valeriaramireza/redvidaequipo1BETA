@@ -36,9 +36,9 @@
 		<?php $this->widget('bootstrap.widgets.TbNav', array(
         'type' => TbHtml::NAV_TYPE_TABS,
 		'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Quienes Somos', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contacto', 'url'=>array('/site/contact')),
 				//array('label'=>'Pacientes','url'=>array('/paciente'), 'visible'=>Yii::app()->user->checkAccess('Paciente') && !Yii::app()->user->checkAccess('admin')),
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
@@ -46,7 +46,7 @@
 				array('label'=>'Login'
 					, 'url'=>Yii::app()->user->ui->loginUrl
 					, 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')'
+				array('label'=>'Cerrar Sesión ('.Yii::app()->user->name.')'
 					, 'url'=>Yii::app()->user->ui->logoutUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
 					
@@ -66,9 +66,8 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+            <p>Sistema de Apoyo a la Gestión de Donantes y Necesidades Médicas</p>
+            <p>Clinica Universidad del Bio Bio - 2014</p>
 	</div><!-- footer -->
 
 </div><!-- page -->
