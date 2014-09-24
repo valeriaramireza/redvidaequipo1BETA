@@ -67,6 +67,7 @@
 
 	<div id="footer">
             <p>Sistema de Apoyo a la Gestión de Donantes y Necesidades Médicas</p>
+            <p>Clinica Universidad del Bio Bio - 2014</p>
 	</div><!-- footer -->
 
 </div><!-- page -->
