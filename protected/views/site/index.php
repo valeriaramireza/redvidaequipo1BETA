@@ -16,3 +16,4 @@ $this->pageTitle=Yii::app()->name;
 <p> y que pazaaa, no pasa ná </p>
 <h1>ANDATE A LA CHUCHA PABLO</h1>
 <h1>Si ves esto valeria es porque te funciono!</h1>
+<h1>Wiii! por fin resulto!! Gracias Hernan :)  (TEN PACIENCIA CONMIGO!!)</h1>
