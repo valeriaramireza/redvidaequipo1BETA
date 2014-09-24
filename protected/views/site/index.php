@@ -11,3 +11,4 @@ $this->pageTitle=Yii::app()->name;
 <img src="images/holders.jpg" width="1500" height="50">
 <p>Pedro modificó esto</p>
 <p> Hernan Agrego esto</p>
+<p> Cambio directo en </p>
