@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Red Vida - Clinica UBB',
+	'name'=>'Red Vida - Clinica Universidad del Bío Bío',
      // path aliases
     'aliases' => array(
         
@@ -18,7 +18,7 @@ return array(
 	// preloading 'log' component
         
 	'preload'=>array(
-		'log',
+		'log','bootstrap',
 		),
 
 	// autoloading model and component classes
@@ -43,6 +43,7 @@ return array(
 			'password'=>'root',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+            'bootstrap.gii'
         ),
 
 		'cruge'=>array(

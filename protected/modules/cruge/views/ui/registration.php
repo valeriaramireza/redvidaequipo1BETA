@@ -1,3 +1,34 @@
+<?php Yii::app()->bootstrap->register(); ?>
+<div class="container" id="page">
+
+	<div id="header">
+            <div id="logo"><h1></h1></div>
+	</div><!-- header -->
+        
+<div id="mainmenu">
+
+
+
+		<?php $this->widget('bootstrap.widgets.TbNav', array(
+        'type' => TbHtml::NAV_TYPE_TABS,
+		'items'=>array(
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Quienes Somos', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contacto', 'url'=>array('/site/contact')),
+				//array('label'=>'Pacientes','url'=>array('/paciente'), 'visible'=>Yii::app()->user->checkAccess('Paciente') && !Yii::app()->user->checkAccess('admin')),
+				array('label'=>'Administrar Usuarios'
+					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
+					, 'visible'=>Yii::app()->user->name=='admin'),
+				array('label'=>'Cerrar SesiÃ³n ('.Yii::app()->user->name.')'
+					, 'url'=>Yii::app()->user->ui->logoutUrl
+					, 'visible'=>!Yii::app()->user->isGuest),
+					
+					
+			),
+		)); ?>
+				
+	</div><!-- mainmenu -->
+</div>
 <h1><?php echo ucwords(CrugeTranslator::t("registrarse"));?></h1>
 <div class="form">
 <?php
@@ -26,7 +57,7 @@
 		<div class='item'>
 			<?php echo $form->textField($model,'newPassword'); ?>
 			<p class='hint'><?php echo CrugeTranslator::t(
-				"su contraseña, letras o digitos o los caracteres @#$%. minimo 6 simbolos.");?></p>
+				"su contraseï¿½a, letras o digitos o los caracteres @#$%. minimo 6 simbolos.");?></p>
 		</div>
 		<?php echo $form->error($model,'newPassword'); ?>
 		<script>

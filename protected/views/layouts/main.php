@@ -26,7 +26,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+            <div id="logo"><h1></h1></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -65,9 +65,11 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
-            <p>Sistema de Apoyo a la Gestión de Donantes y Necesidades Médicas</p>
-            <p>Clinica Universidad del Bio Bio - 2014</p>
+        <div id="footer" align="center">
+            <br><br><br><br><br>
+
+            <?php echo TbHtml::small('Sistema de Apoyo a la Gestión de Donantes y Necesidades Médicas'); ?>
+            <?php echo TbHtml::small('Clinica Universidad del Bio Bio - 2014'); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->

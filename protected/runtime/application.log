@@ -155,3 +155,173 @@ Stack trace:
 #31 {main}
 REQUEST_URI=/redvidaequipo1BETA/index.php
 ---
+2014/09/25 07:32:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cruge/views/layouts/ui.php".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge/views/lay...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\redvidaequipo1BETA\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/redvidaequipo1BETA/index.php?r=cruge/views/layouts/ui.php
+---
+2014/09/25 07:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\redvidaequipo1BETA\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/redvidaequipo1BETA/index.php?r=cruge
+---
+2014/09/25 07:50:36 [error] [exception.CException] exception 'CException' with message 'UiController contains improperly nested widget tags in its view "C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\views\ui\login.php". A CContentDecorator widget does not have an endWidget() call.' in C:\xampp\htdocs\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#2 C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php(168): CController->render('login', Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UiController->actionLogin()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge/ui/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\redvidaequipo1BETA\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/redvidaequipo1BETA/index.php?r=cruge/ui/login
+HTTP_REFERER=http://localhost:8080/redvidaequipo1BETA/
+---
+2014/09/25 07:51:16 [error] [exception.CException] exception 'CException' with message 'UiController contains improperly nested widget tags in its view "C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\views\ui\login.php". A CContentDecorator widget does not have an endWidget() call.' in C:\xampp\htdocs\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#2 C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php(168): CController->render('login', Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UiController->actionLogin()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge/ui/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\redvidaequipo1BETA\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/redvidaequipo1BETA/index.php?r=cruge/ui/login
+HTTP_REFERER=http://localhost:8080/redvidaequipo1BETA/
+---
+2014/09/25 08:16:00 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis2
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:16:00 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>Usuario y/o contraseña incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:16 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis2
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:16 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:21 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis2
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:21 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:26 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:26 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:38 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:38 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:40 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:40 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:41 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:41 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)
+2014/09/25 08:17:43 [warning] [application] CrugeFactory::getICrugeStoredUser
+ **NO HALLADO** alexis
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeFactory.php (322)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\components\CrugeUserManager.php (252)
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\models\auth\CrugeAuthDefault.php (68)
+2014/09/25 08:17:43 [error] [application] UiController
+CrugeUser->validate es false
+<div class="errorSummary"><p>Please fix the following input errors:</p>
+<ul>
+<li>RUT y/o Contrase&ntilde;a incorrectos.</li>
+</ul></div>
+in C:\xampp\htdocs\redvidaequipo1BETA\protected\modules\cruge\controllers\UiController.php (165)
+in C:\xampp\htdocs\redvidaequipo1BETA\index.php (13)

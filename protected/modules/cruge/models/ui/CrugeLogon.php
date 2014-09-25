@@ -66,7 +66,7 @@ class CrugeLogon extends CFormModel
         Yii::log(__CLASS__ . "\nauthenticate()\n", "info");
         $this->_identity = Yii::app()->user->um->getNewCrugeUser($this->username, $this->password, $this->authMode);
         if (!$this->_identity->authenticate()) {
-            $this->addError($arg, "Usuario y/o contraseña incorrectos.");
+            $this->addError($arg, "RUT y/o Contrase&ntilde;a incorrectos.");
         }
     }
 
@@ -76,7 +76,7 @@ class CrugeLogon extends CFormModel
         //
         return array(
             'username' => $this->_getUsernameLabel(),
-            'password' => ucfirst(CrugeTranslator::t('logon', 'Password') . ":"),
+            'password' => ucfirst(CrugeTranslator::t('logon', 'Contrase&ntilde;a') . ":"),
             'rememberMe' => ucfirst(CrugeTranslator::t('logon', 'Remember this machine') . ":"),
             'verifyCode' => ucfirst(CrugeTranslator::t('logon', 'Security code') . ":"),
         );
@@ -87,8 +87,8 @@ class CrugeLogon extends CFormModel
         $label = "";
         $sep = "";
         foreach (CrugeUtil::config()->availableAuthModes as $k => $v) {
-            $label .= $sep . CrugeTranslator::t('logon', ucfirst(CrugeUtil::config()->availableAuthModes[$k]));
-            $sep = " " . CrugeTranslator::t('logon', 'or') . " ";
+            $label=CrugeTranslator::t('logon', ucfirst(CrugeTranslator::t('logon', 'RUT')));
+           
         }
         $label .= ":";
         return $label;

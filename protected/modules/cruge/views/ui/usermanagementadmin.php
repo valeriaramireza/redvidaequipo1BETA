@@ -1,5 +1,43 @@
+<?php Yii::app()->bootstrap->register(); ?>
+<div class="container" id="page">
+
+	<div id="header">
+            <div id="logo"><h1></h1></div>
+	</div><!-- header -->
+        
+<div id="mainmenu">
+
+
+
+		<?php $this->widget('bootstrap.widgets.TbNav', array(
+        'type' => TbHtml::NAV_TYPE_TABS,
+		'items'=>array(
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Quienes Somos', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contacto', 'url'=>array('/site/contact')),
+				//array('label'=>'Pacientes','url'=>array('/paciente'), 'visible'=>Yii::app()->user->checkAccess('Paciente') && !Yii::app()->user->checkAccess('admin')),
+				array('label'=>'Administrar Usuarios'
+					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
+					, 'visible'=>Yii::app()->user->name=='admin'),
+				array('label'=>'Cerrar Sesión ('.Yii::app()->user->name.')'
+					, 'url'=>Yii::app()->user->ui->logoutUrl
+					, 'visible'=>!Yii::app()->user->isGuest),
+					
+					
+			),
+		)); ?>
+				
+	</div><!-- mainmenu -->
+</div>
+ 
+
+
+
+
+
+
 <div class="form">
-<h1><?php echo ucwords(CrugeTranslator::t('admin', 'Manage Users'));?></h1>
+<h1><?php echo ucwords(CrugeTranslator::t('admin', 'Gestionar Usuarios'));?></h1>
 <?php 
 /*
 	para darle los atributos al CGridView de forma de ser consistente con el sistema Cruge
@@ -31,11 +69,11 @@ $cols[] = array(
 	'deleteConfirmation'=>CrugeTranslator::t('admin', 'Are you sure you want to delete this user'),
 	'buttons' => array(
 			'update'=>array(
-				'label'=>CrugeTranslator::t('admin', 'Update User'),
+				'label'=>CrugeTranslator::t('admin', 'Actualizar Usuario'),
 				'url'=>'array("usermanagementupdate","id"=>$data->getPrimaryKey())'
 			),
 			'eliminar'=>array(
-				'label'=>CrugeTranslator::t('admin', 'Delete User'),
+				'label'=>CrugeTranslator::t('admin', 'Eliminar Usuario'),
 				'imageUrl'=>Yii::app()->user->ui->getResource("delete.png"),
 				'url'=>'array("usermanagementdelete","id"=>$data->getPrimaryKey())'
 			),
