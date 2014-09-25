@@ -1,7 +1,3 @@
-<?php
-/* @var $this SiteController */
-
-?>
 
 <?php Yii::app()->bootstrap->register(); ?>
 <div class="container" id="page">
@@ -34,7 +30,7 @@
 				
 	</div><!-- mainmenu -->
 </div>
- 
+
 <div><h1>&nbsp;</h1></div>
 <div><h1>&nbsp;</h1></div>
 <h1 align="center"><?php echo TbHtml::lead('Iniciar Sesion'); ?></h1>
