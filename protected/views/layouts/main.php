@@ -39,6 +39,12 @@
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Quienes Somos', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contacto', 'url'=>array('/site/contact')),
+                                array('label'=>'Gestión Centros Médicos'
+					, 'url'=>array('/centroMedico/','view'=>'index')
+					, 'visible'=>Yii::app()->user->checkAccess('admin')),
+                                array('label'=>'Gestion Donantes'
+					, 'url'=>array('/donante/','view'=>'index')
+					, 'visible'=>Yii::app()->user->checkAccess('admin')),
 				//array('label'=>'Pacientes','url'=>array('/paciente'), 'visible'=>Yii::app()->user->checkAccess('Paciente') && !Yii::app()->user->checkAccess('admin')),
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
@@ -69,12 +75,12 @@
 
 	<div class="clear"></div>
 
-        <div id="footer" align="center">
+        <!-- <div id="footer" align="center">
             <br><br><br><br><br>
 
             <?php echo TbHtml::small('Sistema de Apoyo a la Gestión de Donantes y Necesidades Médicas'); ?>
-            <?php echo TbHtml::small('Clinica Universidad del Bio Bio - 2014'); ?>
-	</div><!-- footer -->
+            <?php echo TbHtml::small('Clinica Universidad del Bio Bio - 201648751'); ?>
+	</div> -->
 
 </div><!-- page -->
 
